@@ -1,0 +1,76 @@
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(209, 209, 209);
+
+  .app-card {
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 20px;
+
+    &-head {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .cancel {
+        display: none;
+      }
+    }
+    &-body {
+      .edit-Task-form {
+        display: none;
+      }
+      .add-Task-form {
+        display: none;
+      }
+      .tasks {
+        margin-top: 10px;
+      }
+      .task-list {
+        list-style: none;
+        padding: 0px;
+        .task-item {
+          padding: 10px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #3333;
+          margin-bottom: 5px;
+
+          P {
+            margin: 0px;
+          }
+          span {
+            font-size: 12px;
+            color: #5a5a5a;
+          }
+          i {
+            font-size: 20px;
+          }
+          .edit {
+            margin-right: 5px;
+            color: rgb(1, 124, 17);
+          }
+          .delete {
+            color: rgb(167, 44, 44);
+          }
+        }
+        .task-completed {
+          border-left: 5px solid rgb(18, 160, 18);
+        }
+      }
+    }
+    .app-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 16px;
+    }
+  }
+}
