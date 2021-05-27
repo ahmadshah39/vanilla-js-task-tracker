@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   entry: {
     main: "./src/js/main.js",
-    vendor: "./src/js/vendor/vendor.js",
+    // vendor: "./src/js/vendor/vendor.js",
   },
   module: {
     rules: [
